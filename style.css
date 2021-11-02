@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Lobster&family=Playfair+Display+SC:ital,wght@0,700;1,700&display=swap');
+
 :root {
-    --background: #0F2B5F;
+    --background: #fff;
   }
   
   *, *::before, *::after {
@@ -8,8 +10,8 @@
   
   body {
     margin: 0;
-    background: #222;
-    font-family: 'Raleway', sans-serif;
+    background: #0F2B5F;
+    font-family: 'Lato';
     font-weight: 400;
   }
   
@@ -24,6 +26,7 @@
   
   header {
     background: var(--background);
+    background-color: #0F2B5F;
     text-align: center;
     position: fixed;
     width: 100%;
@@ -205,14 +208,64 @@
 
   .ptext {
     position: absolute;
-    top: 50%;
+    color: #0F2B5F;
+    top: 15%;
     width: 100%;
     text-align: center;
     font-size: 20px;
-    letter-spacing: 8px;
     text-transform: uppercase;
+    font-family: 'Playfair Display SC', serif;
+    padding: 20px;
   }
 
-  .date {
-    color: #0F2B5F;
+  .ptext2 {
+    position: absolute;
+    color: #C9528E;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    font-size: 50px;
+    text-transform: uppercase;
+    font-family: 'Playfair Display SC', serif;
+    padding: 20px;
+  }
+
+/*-- ----------------------------------- Test for image links ----------------------------------- */
+
+  
+    
+/*-- ----------------------------------------- End test ----------------------------------------- */
+
+  .overlay-container {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+  }
+  
+  .overlay {
+    position: absolute;
+    transition: all .3s ease;
+    opacity: 0;
+    background: rgba(0, 177, 186, .6);
+  }
+  
+  .overlay-container:hover .overlay {
+    opacity: 1;
+  }
+  
+  .overlay-fade {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+  }
+  
+  .overlay-text {
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    width: 100%;
+    font-size: 20px;
+    transition: translate(-50%, -50%);
   }

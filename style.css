@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Lobster&family=Playfair+Display+SC:ital,wght@0,700;1,700&display=swap');
 
+
 :root {
     --background: #fff;
   }
@@ -10,7 +11,7 @@
   
   body {
     margin: 0;
-    background: #0F2B5F;
+    background: #fff;
     font-family: 'Lato';
     font-weight: 400;
   }
@@ -26,7 +27,7 @@
   
   header {
     background: var(--background);
-    background-color: #0F2B5F;
+    background-color: #314465;
     text-align: center;
     position: fixed;
     width: 100%;
@@ -117,6 +118,28 @@
     opacity: 1;
     transition: opacity 250ms ease-in-out 250ms;
   }
+
+  h2 {
+    font-family: 'Playfair Display SC', serif;
+    font-size: 70px;
+    color: #6699CC;
+    text-align: center;
+  }
+
+  h3 {
+    font-family: 'Lobster';
+    font-size: 90px;
+    text-transform: none;
+    font-weight: 300;
+    color: #314465;
+    text-align: center;
+  }
+
+  .body-text {
+    font: 15px;
+    font-family: 'Lato' , sans-serif;
+    color: #0F2B5F;
+  }
   
   /* media query for desktop */
   @media screen and (min-width: 600px) {
@@ -182,6 +205,14 @@
   .hero {
     height: 110vh;
     background-image: url(images/Hero\ Image.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+  }
+
+  .hero2 {
+    height: 110vh;
+    background-image: url(images/Opening-Ceremony.png);
     background-size: cover;
     display: flex;
     justify-content: center;

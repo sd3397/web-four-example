@@ -9,6 +9,10 @@
     box-sizing: border-box;
   }
   
+  .row {
+    display: flex;
+  }
+  
   body {
     margin: 0;
     background: #fff;
@@ -261,9 +265,62 @@
     padding: 20px;
   }
 
+  .columns_2 {
+    padding: 0 20px;
+  }
+  
+  .columns_2:last-of-type {
+      margin-right: 0;
+  }
 /*-- ----------------------------------- Test for image links ----------------------------------- */
 
+  .main-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .right-col {
+    margin-left: 10px;
+  }
+
+  .right-col img{
+    padding: 10px;
+   
+  }
+
+  .overlay-images {
+    position: relative;
+    overflow: hidden;
+  }
   
+  .overlay {
+    position: absolute;
+    transition: all .3s ease;
+    opacity: 0;
+    background: rgba(192,192,192,0.3);
+  }
+
+  .overlay-images:hover .overlay {
+    opacity: 1;
+  }
+
+  .overlay-fade {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+  }
+
+  .overlay-text {
+    color: #0F2B5F;
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    width: 100%;
+    font-size: 20px;
+    transition: translate(-50%, -50%);
+  }
     
 /*-- ----------------------------------------- End test ----------------------------------------- */
 

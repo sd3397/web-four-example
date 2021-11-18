@@ -140,6 +140,21 @@
     text-align: center;
   }
 
+  h4 {
+    font-family: 'Playfair Display SC', serif;
+    font-size: 50px;
+    color: #6699CC;
+    text-align: left;
+    padding-left: 310px;
+  }
+
+  h5 {
+    font-family: 'Playfair Display SC', serif;
+    font-size: 30px;
+    color: #0F2B5F;
+    text-align: right;
+  }
+
   .body-text {
     font: 15px;
     font-family: 'Lato' , sans-serif;
@@ -273,6 +288,14 @@
   .columns_2:last-of-type {
       margin-right: 0;
   }
+
+  .columns_3 {
+    padding: 0 20px;
+  }
+  
+  .columns_3:last-of-type {
+      margin-right: 0;
+  }
 /*-- ----------------------------------- Test for image links ----------------------------------- */
 
   .main-links {
@@ -341,3 +364,79 @@
   }
     
 /*-- ----------------------------------------- End test ----------------------------------------- */
+
+.pinkmain {
+  justify-content: center;
+}
+
+.food-options {
+  align-content: center;
+}
+
+.form-body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: sans-serif;
+  background: #246b73;
+}
+
+.label-titles {
+  color: white;
+  font-family: 'Lato', sans-serif;
+}
+
+.contact-title {
+  margin-top: 100px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.contact-title h1 {
+  font-size: 32px;
+  line-height: 10px;
+}
+
+.contact-title h2 {
+  font-size: 16px;
+}
+
+form {
+  background: #50607C;
+  width: 300px;
+  margin: 0 auto;
+  padding: 15px;
+  border-radius: 15px;
+}
+
+form div {
+  margin: 15px;
+}
+
+form input {
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-left: 10px solid #FFD5E3;
+}
+
+button {
+  padding: 10px 15px;
+  border-radius: 25px;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #ff98ca;
+  color: white;
+}
+
+.footer {
+  height: 15vh;
+  background-color: #314465;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}

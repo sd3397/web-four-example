@@ -10,7 +10,11 @@
   }
   
   .row {
+    margin: 0 auto 90px auto;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
   }
   
   body {
@@ -131,6 +135,16 @@
     text-align: center;
   }
 
+  .title-left {
+    text-align: right;
+    padding-right: 50px;
+  }
+
+  .title-right {
+    text-align: left;
+    padding-left: 50px;
+  }
+
   h3 {
     font-family: 'Lobster';
     font-size: 90px;
@@ -142,7 +156,7 @@
 
   h4 {
     font-family: 'Playfair Display SC', serif;
-    font-size: 50px;
+    font-size: 40px;
     color: #6699CC;
     text-align: left;
     padding-left: 310px;
@@ -282,7 +296,7 @@
   }
 
   .columns_2 {
-    padding: 0 20px;
+    padding: 0;
   }
   
   .columns_2:last-of-type {
@@ -295,6 +309,15 @@
   
   .columns_3:last-of-type {
       margin-right: 0;
+  }
+
+  .video {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .blossom-image {
+    padding-bottom: 70px;
   }
 /*-- ----------------------------------- Test for image links ----------------------------------- */
 
@@ -439,4 +462,66 @@ button:hover {
   background-size: cover;
   display: flex;
   justify-content: center;
+}
+
+/*-- ----------------------------------------- media query for desktop-- ----------------------------------------- */
+
+@media screen and (min-width: 600px) {
+  
+  .nav-toggle-label {
+    display: none;
+  }
+  
+  header {
+    display: grid;
+    grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
+  }
+ 
+  .logo {
+    grid-column: 2/3;
+  }
+  
+  nav {
+    all:unset;
+    grid-column: 3/4;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  nav li {
+    margin-left: 3em;
+    margin-bottom: 0;
+  }
+  
+  nav a {
+    opacity: 1;
+    position: relative;
+  }
+  
+  /* add line above or below the selection on hover */
+  nav a::before {
+    content:"";
+    display: block;
+    height: 5px;
+    background: black;
+    position: absolute;
+    top: -.75em;
+    left: 0;
+    right: 0;
+    
+    transform: scale(0,1);
+    transform-origin: left;
+    transition: transform ease-in-out 250ms;
+  }
+  
+  nav a:hover::before {
+    transform: scale(1,1);
+  }
+  
 }

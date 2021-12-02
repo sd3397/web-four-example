@@ -31,7 +31,7 @@
     background-size: cover;
   }
   
-  /* Navigation goes here */
+  /*------------------------------------------------ Navigation goes here ------------------------------------------------*/
   
   header {
     background: var(--background);
@@ -130,7 +130,7 @@
 
   h2 {
     font-family: 'Playfair Display SC', serif;
-    font-size: 70px;
+    font-size: 40px;
     color: #6699CC;
     text-align: center;
   }
@@ -173,67 +173,6 @@
     font: 15px;
     font-family: 'Lato' , sans-serif;
     color: #0F2B5F;
-  }
-  
-  /* media query for desktop */
-  @media screen and (min-width: 600px) {
-    
-    .nav-toggle-label {
-      display: none;
-    }
-    
-    header {
-      display: grid;
-      grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
-    }
-   
-    .logo {
-      grid-column: 2/3;
-    }
-    
-    nav {
-      all:unset;
-      grid-column: 3/4;
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-    }
-    
-    nav ul {
-      display: flex;
-      justify-content: flex-end;
-    }
-    
-    nav li {
-      margin-left: 3em;
-      margin-bottom: 0;
-    }
-    
-    nav a {
-      opacity: 1;
-      position: relative;
-    }
-    
-    /* add line above or below the selection on hover */
-    nav a::before {
-      content:"";
-      display: block;
-      height: 5px;
-      background: #FF007E;
-      position: absolute;
-      top: -.75em;
-      left: 0;
-      right: 0;
-      
-      transform: scale(0,1);
-      transform-origin: center;
-      transition: transform ease-in-out 250ms;
-    }
-    
-    nav a:hover::before {
-      transform: scale(1,1);
-    }
-    
   }
 
   .hero {
@@ -319,7 +258,8 @@
   .blossom-image {
     padding-bottom: 70px;
   }
-/*-- ----------------------------------- Test for image links ----------------------------------- */
+
+ /*----------------------------------------------- Test for image links -----------------------------------------------*/
 
   .main-links {
     display: flex;
@@ -386,87 +326,87 @@
     transition: translate(-50%, -50%);
   }
     
-/*-- ----------------------------------------- End test ----------------------------------------- */
+ /*------------------------------------------------------ End test ------------------------------------------------------*/
 
-.pinkmain {
-  justify-content: center;
-}
+  .pinkmain {
+    justify-content: center;
+  }
 
-.food-options {
-  align-content: center;
-}
+  .food-options {
+    align-content: center;
+  }
 
-.form-body {
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  font-family: sans-serif;
-  background: #246b73;
-}
+  .form-body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: sans-serif;
+    background: #246b73;
+  }
 
-.label-titles {
-  color: white;
-  font-family: 'Lato', sans-serif;
-}
+  .label-titles {
+    color: white;
+    font-family: 'Lato', sans-serif;
+  }
 
-.contact-title {
-  margin-top: 100px;
-  text-transform: uppercase;
-  color: white;
-}
+  .contact-title {
+    margin-top: 100px;
+    text-transform: uppercase;
+    color: white;
+  }
 
-.contact-title h1 {
-  font-size: 32px;
-  line-height: 10px;
-}
+  .contact-title h1 {
+   font-size: 32px;
+    line-height: 10px;
+  }
 
-.contact-title h2 {
-  font-size: 16px;
-}
+  .contact-title h2 {
+    font-size: 16px;
+  }
 
-form {
-  background: #50607C;
-  width: 300px;
-  margin: 0 auto;
-  padding: 15px;
-  border-radius: 15px;
-}
+  form {
+    background: #50607C;
+    width: 300px;
+    margin: 0 auto;
+    padding: 15px;
+    border-radius: 15px;
+  }
 
-form div {
-  margin: 15px;
-}
+  form div {
+    margin: 15px;
+  }
 
-form input {
-  padding: 10px;
-  width: 100%;
-  border: none;
-  border-left: 10px solid #FFD5E3;
-}
+  form input {
+    padding: 10px;
+    width: 100%;
+    border: none;
+   border-left: 10px solid #FFD5E3;
+  }
 
-button {
-  padding: 10px 15px;
-  border-radius: 25px;
-  border: none;
-  text-transform: uppercase;
-  cursor: pointer;
-}
+  button {
+   padding: 10px 15px;
+   border-radius: 25px;
+   border: none;
+   text-transform: uppercase;
+   cursor: pointer;
+  }
 
-button:hover {
-  background: #ff98ca;
-  color: white;
-}
+  button:hover {
+   background: #ff98ca;
+   color: white;
+  }
 
-.footer {
-  height: 15vh;
-  background-color: #314465;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-}
+  .footer {
+   height: 15vh;
+   background-color: #314465;
+   background-size: cover;
+   display: flex;
+   justify-content: center;
+  }
 
-/*-- ----------------------------------------- media query for desktop-- ----------------------------------------- */
+ /*----------------------------------------------- media query for desktop----------------------------------------------- */
 
-@media screen and (min-width: 600px) {
+  @media screen and (min-width: 600px) {
   
   .nav-toggle-label {
     display: none;
@@ -479,6 +419,13 @@ button:hover {
  
   .logo {
     grid-column: 2/3;
+  }
+
+  h2 {
+    font-family: 'Playfair Display SC', serif;
+    font-size: 70px;
+    color: #6699CC;
+    text-align: center;
   }
   
   nav {
@@ -509,7 +456,7 @@ button:hover {
     content:"";
     display: block;
     height: 5px;
-    background: black;
+    background: #FF98CA;
     position: absolute;
     top: -.75em;
     left: 0;

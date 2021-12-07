@@ -9,14 +9,6 @@
     box-sizing: border-box;
   }
   
-  .row {
-    margin: 0 auto 90px auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 70%;
-  }
-  
   body {
     margin: 0;
     background: #fff;
@@ -33,56 +25,8 @@
   
   /*------------------------------------------------ Navigation goes here ------------------------------------------------*/
   
-  
- /*----------------------------------------------- media query for desktop----------------------------------------------- */
-
-  @media screen and (min-width: 600px) {
-
-  .nav-toggle-label {
-    display: none;
-  }
-  
-  header {
-    display: grid;
-    grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
-  }
- 
-  .logo {
-    grid-column: 2/3;
-  }
-
-  h2 {
-    font-family: 'Playfair Display SC', serif;
-    font-size: 70px;
-    color: #6699CC;
-    text-align: center;
-  }
-  
-  nav {
-    all:unset;
-    grid-column: 3/4;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-  }
-  
-  nav ul {
-    display: flex;
-    justify-content: flex-end;
-  }
-  
-  nav li {
-    margin-left: 3em;
-    margin-bottom: 0;
-  }
-  
-  nav a {
-    opacity: 1;
-    position: relative;
-  }
-  
-  /* add line above or below the selection on hover */
-  nav a::before {
+   /* add line above or below the selection on hover */
+   nav a::before {
     content:"";
     display: block;
     height: 5px;
@@ -203,13 +147,69 @@
     transition: opacity 250ms ease-in-out 250ms;
   }
 
-/*---------------------------------------------------- End Navigation ----------------------------------------------------*/
+/*---------------------------------------------------- End Navigation ---------------------------------------------------*/ 
+  
+/* --------- code for phone screen -----------*/
+h2 {
+  font-family: 'Playfair Display SC', serif;
+  font-size: 30px;
+  color: #6699CC;
+  text-align: center;
+}
+
+ /*----------------------------------------------- media query for desktop----------------------------------------------- */
+
+  @media screen and (min-width: 800px) {
+
+    .row {
+      margin: 0 auto 90px auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 70%;
+    }
+  
+    .nav-toggle-label {
+    display: none;
+  }
+  
+  header {
+    display: grid;
+    grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
+  }
+ 
+  .logo {
+    grid-column: 2/3;
+  }
 
   h2 {
     font-family: 'Playfair Display SC', serif;
-    font-size: 40px;
+    font-size: 70px;
     color: #6699CC;
     text-align: center;
+  }
+  
+  nav {
+    all:unset;
+    grid-column: 3/4;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  nav li {
+    margin-left: 3em;
+    margin-bottom: 0;
+  }
+  
+  nav a {
+    opacity: 1;
+    position: relative;
   }
 
   .title-left {
@@ -334,13 +334,6 @@
 
   .blossom-image {
     padding-bottom: 70px;
-  }
-
-  .sponsor {
-    margin-left: 20px;
-    padding-bottom: 20px;
-    justify-content: center;
-    align-items: center;
   }
 
  /*----------------------------------------------- Test for image links -----------------------------------------------*/

@@ -33,6 +33,81 @@
   
   /*------------------------------------------------ Navigation goes here ------------------------------------------------*/
   
+  
+ /*----------------------------------------------- media query for desktop----------------------------------------------- */
+
+  @media screen and (min-width: 600px) {
+
+  .nav-toggle-label {
+    display: none;
+  }
+  
+  header {
+    display: grid;
+    grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
+  }
+ 
+  .logo {
+    grid-column: 2/3;
+  }
+
+  h2 {
+    font-family: 'Playfair Display SC', serif;
+    font-size: 70px;
+    color: #6699CC;
+    text-align: center;
+  }
+  
+  nav {
+    all:unset;
+    grid-column: 3/4;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  nav li {
+    margin-left: 3em;
+    margin-bottom: 0;
+  }
+  
+  nav a {
+    opacity: 1;
+    position: relative;
+  }
+  
+  /* add line above or below the selection on hover */
+  nav a::before {
+    content:"";
+    display: block;
+    height: 5px;
+    background: #FF98CA;
+    position: absolute;
+    top: -.75em;
+    left: 0;
+    right: 0;
+    
+    transform: scale(0,1);
+    transform-origin: left;
+    transition: transform ease-in-out 250ms;
+  }
+  
+  nav a:hover::before {
+    transform: scale(1,1);
+  }
+  
+  .sponsor {
+    margin-left: 20px;
+    padding-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+
   header {
     background: var(--background);
     background-color: #314465;
@@ -127,6 +202,8 @@
     opacity: 1;
     transition: opacity 250ms ease-in-out 250ms;
   }
+
+/*---------------------------------------------------- End Navigation ----------------------------------------------------*/
 
   h2 {
     font-family: 'Playfair Display SC', serif;
@@ -257,6 +334,13 @@
 
   .blossom-image {
     padding-bottom: 70px;
+  }
+
+  .sponsor {
+    margin-left: 20px;
+    padding-bottom: 20px;
+    justify-content: center;
+    align-items: center;
   }
 
  /*----------------------------------------------- Test for image links -----------------------------------------------*/
@@ -404,71 +488,5 @@
    justify-content: center;
   }
 
- /*----------------------------------------------- media query for desktop----------------------------------------------- */
 
-  @media screen and (min-width: 600px) {
-  
-  .nav-toggle-label {
-    display: none;
-  }
-  
-  header {
-    display: grid;
-    grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
-  }
- 
-  .logo {
-    grid-column: 2/3;
-  }
-
-  h2 {
-    font-family: 'Playfair Display SC', serif;
-    font-size: 70px;
-    color: #6699CC;
-    text-align: center;
-  }
-  
-  nav {
-    all:unset;
-    grid-column: 3/4;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-  }
-  
-  nav ul {
-    display: flex;
-    justify-content: flex-end;
-  }
-  
-  nav li {
-    margin-left: 3em;
-    margin-bottom: 0;
-  }
-  
-  nav a {
-    opacity: 1;
-    position: relative;
-  }
-  
-  /* add line above or below the selection on hover */
-  nav a::before {
-    content:"";
-    display: block;
-    height: 5px;
-    background: #FF98CA;
-    position: absolute;
-    top: -.75em;
-    left: 0;
-    right: 0;
-    
-    transform: scale(0,1);
-    transform-origin: left;
-    transition: transform ease-in-out 250ms;
-  }
-  
-  nav a:hover::before {
-    transform: scale(1,1);
-  }
-  
 }

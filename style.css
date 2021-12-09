@@ -30,7 +30,7 @@
     content:"";
     display: block;
     height: 5px;
-    background: #FF98CA;
+    background: #FF007F;
     position: absolute;
     top: -.75em;
     left: 0;
@@ -312,7 +312,7 @@ h2 {
   }
 
   .columns_2 {
-    padding: 0;
+    margin: 20px;
   }
   
   .columns_2:last-of-type {

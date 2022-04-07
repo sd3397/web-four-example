@@ -46,10 +46,13 @@
   }
   
   .sponsor {
-    margin-left: 20px;
     padding-bottom: 20px;
-    justify-content: center;
+    padding-left: 530px;
+    margin-bottom: 50px;
+    display: flex;
     align-items: center;
+    justify-content: center;
+    
   }
 
   header {
@@ -235,8 +238,7 @@ h2 {
     font-family: 'Playfair Display SC', serif;
     font-size: 40px;
     color: #6699CC;
-    text-align: left;
-    padding-left: 310px;
+    text-align: center;
   }
 
   h5 {
@@ -479,6 +481,11 @@ h2 {
    background-size: cover;
    display: flex;
    justify-content: center;
+  }
+
+  .footer-text {
+    font-family: 'Lato';
+    color: #FFF;
   }
 
 
